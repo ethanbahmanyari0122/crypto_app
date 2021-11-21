@@ -12,6 +12,20 @@ const Navbar = () => {
                 <Typography.Title level={2} className="logo">
                     <Link to="/">Ethaniuverse</Link>
                 </Typography.Title>
+                <Menu theme="dark">
+                    <Menu.Item icon={<HomeOutlined/>}>
+                        <Link to="/">Home</Link>
+                    </Menu.Item>
+                    <Menu.Item icon={<HomeOutlined/>}>
+                        <Link to="/">Home</Link>
+                    </Menu.Item>
+                    <Menu.Item icon={<HomeOutlined/>}>
+                        <Link to="/">Home</Link>
+                    </Menu.Item>
+                    <Menu.Item icon={<HomeOutlined/>}>
+                        <Link to="/">Home</Link>
+                    </Menu.Item>
+                </Menu>
                 {/*<Button className="menu-control-container">*/}
                 {/*    */}
                 {/*</Button>*/}
