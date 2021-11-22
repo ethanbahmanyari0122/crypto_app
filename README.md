@@ -11,9 +11,9 @@ With the ability to search for up-to-date results, news, Exchanges, charts and m
 
 # Local launch
 
-1. Clone repo: `git clone https://github.com/ethanbahmanyari0122/Ethanium_search_engine.git` 
+1. Clone repo: `https://github.com/ethanbahmanyari0122/crypto_app.git` 
 
-3. `cd ethanium_search_engine`
+3. `cd crypto_app`
 
 5. Install dependencies with `yarn` or `npm install`
 
