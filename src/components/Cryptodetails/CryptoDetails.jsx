@@ -69,6 +69,7 @@ const CryptoDetails = () => {
                                 <Text>{icon}</Text>
                                 <Text>{title}</Text>
                             </Col>
+                            <Text className="stats">{value}</Text>
                         </Col>
                     ))}
                 </Col>
