@@ -6,6 +6,8 @@ import {useGetCryptoNewsQuery} from "../../services/cryptoNews";
 
 const {Text, Title} = Typography;
 const { Option } = Select;
+
+const demoImage = 'http://coinrevolution.com/wp-content/uploads/2020/06/cryptonews.jpg';
 const News = ({simplified}) => {
     const {data: cryptoNews} = useGetCryptoNewsQuery({ newsCategory: 'Cryptocurrency', count: simplified ? 6 : 12})
 
@@ -18,7 +20,12 @@ const News = ({simplified}) => {
                         <a href={news.url} target="_blank" rel="noreferrer">
                             <div className="news-image-container">
                                 <Title className="news-title" level={4}>{news.name}</Title>
+                                <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="news"/>
                             </div>
+                            <p>
+                                {news.description > 100 ? `${news.description.substring(0, 100)}...`
+                                : news.description}
+                            </p>
                         </a>
                     </Card>
                 </Col>
