@@ -22,4 +22,4 @@ export const cryptoNews = createApi({
     })
 });
 
-export const {useGetCryptosQuery} = cryptoApi;
+export const {useGetCryptoNewsQuery} = cryptoNews;
