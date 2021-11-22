@@ -78,6 +78,9 @@ const CryptoDetails = () => {
                         <Title level={3} className="coin-details-heading">
                             Other Statistics
                         </Title>
+                        <p>
+                            An overview showing the stats of all Cryptocurrencies
+                        </p>
                     </Col>
                     {genericStats.map(({icon, title,value}) => (
                         <Col className="coin-stats">
