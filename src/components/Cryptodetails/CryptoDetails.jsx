@@ -46,7 +46,14 @@ const CryptoDetails = () => {
                     View value statistics, market cap and supply.
                 </p>
             </Col>
+            <Select defaultValue="7d"
+                    className="select-timeperiod"
+                    placeholder="Select the Time Period"
+                    onChange={(value => setTimeperiod(value))}
+                    >
+                {time.map((date)=> <option key={date}>{date}</option>)}
 
+            </Select>
         </Col>
     )
 }
